@@ -1,0 +1,17 @@
+body {
+    background-color: turquoise;
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chocolate;
+    text-decoration: dashed;
+}
+
