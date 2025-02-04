@@ -1,8 +1,10 @@
 body {
-    background-color: turquoise;
+    background: linear-gradient(0deg, rgb(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-attachment: fixed;
     text-align: center;
     color: black;
     font-family: fantasy;
+    letter-spacing: 1px;
 }
 
 a {
@@ -15,3 +17,46 @@ a:hover {
     text-decoration: dashed;
 }
 
+ul {
+    text-align: left;
+    display: block;
+}
+
+ul li::marker {
+    color: black;
+}
+
+ul > li {
+    margin: 10px 0;
+    color: rgba(9, 39, 128, 0.827);    
+}
+
+img {
+    max-width: 50%;
+    height: 300px;
+    object-fit: contain; 
+}
+
+figure {
+    text-align: center;
+    font-style: italic; 
+}
+
+
+
+.bold {
+    font-weight: bold;
+    color: black;
+    font-size: large;
+}
+
+.indent {
+    list-style-position: inside;
+    text-indent: 20px;
+}
+
+.p-contract {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;    
+}
