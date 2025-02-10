@@ -3,7 +3,7 @@ body {
     background-attachment: fixed;
     text-align: center;
     color: black;
-    font-family: fantasy;
+    font-family: fantasy, sans-serif;
     letter-spacing: 1px;
 }
 

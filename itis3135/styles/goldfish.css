@@ -1,0 +1,31 @@
+    
+body {
+    background: linear-gradient(0deg, rgb(14, 15, 15) 0%, rgb(246, 245, 243) 100%);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+  }
+  
+  .centered-text {
+    max-width: 50ch; 
+    text-align: center; 
+    padding: 1rem; 
+  }
+
+
+a {
+    color: #650344;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: dashed;
+}
+
