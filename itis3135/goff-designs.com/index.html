@@ -18,6 +18,11 @@
             padding: 10px;
         }
 
+        .logo {
+            width: auto;
+            height: 60px; 
+        }
+
         .page-top, .page-mid, .page-bottom {
             width: 100%;
             padding: 20px;
@@ -26,13 +31,19 @@
         }
 
         .page-top {
-            background-color: rgb(93, 27, 27)
-            
+            background-color: rgb(93, 27, 27);
+            display: flex;
+            gap: 15px;
         }
 
         .page-mid {
             background: linear-gradient(0deg, rgba(216, 90, 6, 0.816) 0%, rgb(219, 161, 2) 100%);
             background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
         }
 
         .page-bottom {
@@ -60,8 +71,9 @@
     <header>
         <div class="page-top">
             <h1>
-                Goff-Designs
+                Goff-Designs 
             </h1>
+            <img src="../images/neon_photo.jpg" alt="temporary image" class="logo">
         </div>
     </header>
     <main>
