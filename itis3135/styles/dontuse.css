@@ -1,0 +1,24 @@
+.box {
+    border-radius: 25% 17% 69% 31%;
+    border: 50px solid black;
+    position: absolute;
+    left: 50%;
+    bottom:50%;
+    transform: rotate(56deg);
+    background-color: white;
+}
+
+ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: #800080;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
