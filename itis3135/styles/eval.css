@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+
+.good-site, .bad-site {
+    border: 2px solid black; /*remove at end*/
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.description {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.not-bold {
+    font-weight: normal;
+}
