@@ -1,9 +1,19 @@
+/*Activity 4 assignment*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {}
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {}
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {}
+/*---------------------------*/
 body {
     background: linear-gradient(0deg, rgb(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     background-attachment: fixed;
     text-align: center;
     color: black;
-    font-family: fantasy, sans-serif;
+    font-family: sans-serif;
     letter-spacing: 1px;
 }
 
