@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <title>Nick's Hobby</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                width: 95%;
+                margin: auto;
+                background: #121212;
+                color: white;
+            }
+
+            #header {
+                background: linear-gradient(to right, #004d00, #003366);
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            h1 {
+                color: #ffffff;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 5px 40px;
+            }
+
+            nav ul li:not(:last-child)::after {
+                content: "\1F3AE"; /* Game controller emoji */
+                margin-left: 15px;
+            }
+
+            nav ul li a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+            }
+
+            a:hover {
+                color: #ffcc00;
+            }
+
+            h2 {
+                color: #ffcc00;
+            }
+
+            .page {
+                display: none;
+                min-height: 100vh;
+                align-items: center;
+                padding: 40px;
+            }
+
+            .page.active {
+                display: flex;
+            }
+
+            .left-side {
+                flex: 1;
+                text-align: left;
+            }
+
+            .right-side {
+                flex: 1;
+                text-align: right;
+            }
+
+            .right-side p {
+                max-width: 60%;
+                margin-left: auto;
+            }
+
+            
+            #main-page, #about-me, #timeline, #gaming-rooms, #how, #genres {
+                background: linear-gradient(to right, #990000, #ffcc00);
+            }
+
+            #genres ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            #genres ul li {
+                background: #006600;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <h1>Nick's Hobby</h1> <!-- Header for the hobby page -->
+                <nav>
+                    <ul>
+                        <li><a href="#" onclick="showPage('main-page')">Hobby</a></li> <!-- Home page -->
+                        <li><a href="#" onclick="showPage('about-me')">About Me</a></li> <!-- About me page -->
+                        <li><a href="#" onclick="showPage('timeline')">Timeline</a></li> <!-- Timeline page -->
+                        <li><a href="#" onclick="showPage('gaming-rooms')">Game Room</a></li> <!-- Where page -->
+                        <li><a href="#" onclick="showPage('how')">How I game</a></li> <!-- How page -->
+                        <li><a href="#" onclick="showPage('genres')">Genres</a></li> <!-- Why page -->
+                    </ul>
+                </nav>
+            </header>
+            <section id="main-page" class="page active">
+                <div class="left-side">
+                <h2>My Hobby</h2> <!-- Main page for hobby (gaming) 'section what'-->
+                    
+                <figure>
+                    <img src="images/controller.jpg" alt="controller">
+                    <figcaption>My favorite controller</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/collection.webp" alt="collection">
+                    <figcaption>An ideal video game collection</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side">
+                        <p>
+                            One of my main hobbies is gaming. I started playing video games with my older brother when I was younger. 
+                            I remember playing games on our ps2 and wii, and then eventually games on the xbox 360. 
+                            The games that stick out to me the most playing were halo 3, halo reach, wii sports, plants vs zombies, and skylanders. 
+                            This was the start of my love for video games. My go to game currently when I have some free time is Apex Legends. 
+                            I have played many games through the years that I have really enjoyed such as call of duty, battlefield, rocket league,
+                            rainbow six siege, and many more. A current favorite at the moment is Split Fiction. 
+                            Gaming eventually led to me getting into computers and technology.
+
+                        </p>
+                        
+                        
+                        </div>
+                        
+                        
+            </section>
+
+            <section id="about-me" class="page">
+                <div class="left-side">
+                <h2>About me</h2> <!-- About me page 'section who'-->
+                <figure>
+                    <img src="images/unc.jpg" alt="UNC Charlotte">
+                    <figcaption>Photo of the University</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cyberKnight.webp" alt="cybersecurity">
+                    <figcaption>A knight representing cyberSecurity</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side">
+                    <p>
+                        Hi, my name is Nicholas Goff. I am a current Junior at the University of North Carolina at Charlotte. 
+                        I am majoring in computer science with a concentration in systems and networks. Outside of classwork I try to study
+                        cybersecurity and am working towards certifications. This website is here to show off some of my skills learned while
+                        talking about one of my hobbies, gaming. 
+                    </p>
+                </div>
+            </section>
+
+            <section id="timeline" class="page">
+                <div class="left-side">
+                <h2>Timeline</h2> <!-- timeline page of how i got into gaming 'section when'-->
+                <figure>
+                    <img src="images/xbox360.jpg" alt="Xbox 360">
+                    <figcaption>Xbox 360 I used to have</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nintendo-wii.webp" alt="wii">
+                    <figcaption>Wii's I've owned</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side" >
+                    
+                        *This timeline is a rough estimate, exact dates are not known*
+                        <ul>
+                            <li>2014: I got my own personal xbox one. 
+                                With that I got Plants vs Zombies Garden Warfare and this game really made me love playing games more than I already did.
+                            </li>
+                            <li>2016: I got Tom Clancy's Rainbow Six Siege. 
+                                This game was the go to game for me and my friends for a long time. We would play this game
+                                almost every night for hours after school and soccer practice. 
+                            </li>
+                            <li>
+                                2018: I got my first gaming pc. 
+                                The release of Fortnite and their game changer of cross-platform gameplay was very appealing to me as
+                                I could still play with my fiends while being on the pc.
+                                I still currently have this pc and would love to upgrade it. 
+                            </li>
+                        </ul>
+                    
+                </div>
+                
+            </section>
+
+            <section id="gaming-rooms" class="page">
+                <div class="left-side">
+                <h2>Gaming Rooms</h2> <!-- Dream game setup 'section where'-->
+                <figure>
+                    <img src="images/gameRoom1.jpg" alt="Game room one">
+                    <figcaption>General Idea for personal room</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gameRoom2.webp" alt="Game room two">
+                    <figcaption>General Idea for public room</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side">
+                    <p>
+                        I would love to have a full standalone gaming room. 
+                    </p>
+                    <p>
+                        Room 1: Personal Game Room
+                    </p>
+                    <p>
+                        I would have a nice desk centered on a wall with a nice pc case next to it. 
+                        Two monitors would be ideal, one for gaming on, and the other for managing discord 
+                        or other means of communication with friends. I'd have shelves around the room with legos
+                        (another hobby of mine), along with other statues and posters of characters from my favorite games, 
+                        movies, and shows. I'd make sure to have a nice color theme around the room with leds everywhere. 
+                    </p>
+                    <p>
+                        Room 2: 'Public' Game room
+                    </p>
+                    <p>
+                        This room would be a hangout spot for when family or friends come over. A nice flat screen mounted on the wall
+                        with different systems connected to it to play whatever style of game we feel like. I'd love to collect old school 
+                        arcade game machines to have placed around the room with a juke box for music. 
+                    </p>
+                </div>
+            </section>
+
+            <section id="how" class="page">
+                <div class="left-side">
+                <h2>How I Game</h2> <!-- how i game 'section how'-->
+                <figure>
+                    <img src="images/r6Stats.png" alt="Rainbow Six Siege stats">
+                    <figcaption>Old Stats from R6S when I played</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/apexStats.png" alt="Apex Legends stats">
+                    <figcaption>Current Stats from Apex legends</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side">
+                    <p>I usually play competitive modes in video games because they offer a greater challenge and a stronger sense of accomplishment. 
+                        The ranking system adds extra motivation, pushing me to improve and strive for higher ranks rather than just playing to win. 
+                        However, I also enjoy casual modes when I don't have the time to commit to a full 
+                        competitive match or when I just want a more relaxed gaming experience.
+                    </p>
+                </div>
+            </section>
+
+            <section id="genres" class="page">
+                <div class="left-side">
+                <h2>Genres</h2> <!-- why i game 'section why'-->
+                <figure>
+                    <img src="images/apexLegends.png" alt="Apex Legends Cover">
+                    <figcaption>Apex Legends Cover</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/splitFiction.jpg" alt="Split Fiction Cover">
+                    <figcaption>Split Fiction Cover</figcaption>
+                </figure>
+                </div>
+
+                <div class="right-side">
+                    <p><strong>First-Person Shooters (FPS)</strong></p>
+                            <ul>
+                                <li>Apex Legends</li>
+                                <li>Call of Duty</li>
+                                <li>Rainbow Six Siege</li>
+                            </ul>
+                        <p>I enjoy FPS games because they test my reflexes, strategic thinking, and teamwork while delivering intense and fast-paced action.</p>
+
+                    <p><strong>Co-op & Multiplayer Games</strong></p>
+                            <ul>
+                                <li>Split Fiction</li>
+                                <li>It Takes Two</li>
+                                <li>Rocket League</li>
+                            </ul>
+                        <p>I love co-op and multiplayer games because they allow me to connect with friends, work together toward a goal, and share exciting gaming moments.</p>
+
+                    <p><strong>Action-Adventure</strong></p>
+                            <ul>
+                                <li>Spider-Man</li>
+                                <li>Assassin's Creed</li>
+                                <li>God of War</li>
+                            </ul>
+                        <p>I'm drawn to action-adventure games for their immersive worlds, compelling stories, and the freedom to explore and experience epic narratives.</p>
+                </div>
+            </section>
+            <script>
+                function showPage(pageId) {
+                    document.querySelectorAll('.page').forEach((page) => {
+                    page.classList.remove('active');
+                    page.style.display = "none"; 
+                    });
+                        let selectedPage = document.getElementById(pageId);
+                        selectedPage.classList.add('active');
+                        selectedPage.style.display = "flex"; 
+                }
+
+            </script>
+        </main>
+    </body>
+</html>
