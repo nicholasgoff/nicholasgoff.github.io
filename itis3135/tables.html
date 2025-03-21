@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Nimble Goldfish Table</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/tables.css">
+    </head>
+    <body>
+        <main>
+            <h2>Table</h2>   
+            <div data-include="components/header.html"></div>
+            <h3>My Tabular Data</h3>
+            <div id="employees">
+                <ol>
+                    <li>
+                        Rick Grimes - rGrimes@goffdesigns.com
+                    </li>
+                    <li>
+                        Scooby Dooby Doo - mrDoo@goffdesigns.com
+                    </li>
+                    <li>
+                        Tony Stank - TonyS@goffdesigns.com
+                    </li>
+                    <li>
+                        Luna Sketch - lSketch@goffdesigns.com
+                    </li>
+                    <li>
+                        Mino Maze - minoMaze@goffdesigns.com
+                    </li>
+                    <li>
+                        Doug Dimmadome - d_dimmadome@goffdesigns.com
+                    </li>
+                    <li>
+                        Charles Lee Ray - Chucky@goffdesigns.com
+                    </li>
+                </ol>
+            </div>
+            <h3>Employee Data in Simple Table</h3>
+            <div class="table-1">
+                <table>
+                    <tbody>
+                        <tr class="top-row">
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years of Service</th>
+                        </tr>
+                        <tr>
+                            <td>Rick Grimes</td>
+                            <td>rGrimes@nimblegold.com</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Scooby Dooby Doo</td>
+                            <td>mrDoo@nimblegold.com</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Tony Stank</td>
+                            <td>TonyS@nimblegold.com</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Luna Sketch</td>
+                            <td>lSketch@nimblegold.com</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Mino Maze</td>
+                            <td>minoMaze@nimblegold.com</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Doug Dimmadome</td>
+                            <td>d_dimmadome@nimblegold.com</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Charles Lee Ray</td>
+                            <td>Chucky@nimblegold.com</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Employee Data in complex Table</h3>
+            <figure>
+            <div class="table-2">
+                <table>
+                    <tbody>
+                        <tr class="top-row">
+                            <th>Job Title</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years of Service</th>
+                            <th>Salary</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>CSO</td>
+                            <td>Rick Grimes</td>
+                            <td>rGrimes@nimblegold.com</td>
+                            <td>10</td>
+                            <td>$675,000</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing</td>
+                            <td>Scooby Dooby Doo</td>
+                            <td>mrDoo@nimblegold.com</td>
+                            <td>3</td>
+                            <td>$125,000</td>
+                        </tr>
+                        <tr>
+                            <td>Engineer</td>
+                            <td>Tony Stank</td>
+                            <td>TonyS@nimblegold.com</td>
+                            <td>5</td>
+                            <td>$255,000</td>
+                        </tr>
+                        <tr>
+                            <td>Sales</td>
+                            <td>Luna Sketch</td>
+                            <td>lSketch@nimblegold.com</td>
+                            <td>6</td>
+                            <td>$200,000</td>
+                        </tr>
+                        <tr>
+                            <td>CyberSecurity</td>
+                            <td>Mino Maze</td>
+                            <td>minoMaze@nimblegold.com</td>
+                            <td>1</td>
+                            <td>$95,000</td>
+                        </tr>
+                        <tr>
+                            <td>Finance</td>
+                            <td>Doug Dimmadome</td>
+                            <td>d_dimmadome@nimblegold.com</td>
+                            <td>4</td>
+                            <td>$165,000</td>
+                        </tr>
+                        <tr>
+                            <td>Marketing</td>
+                            <td>Charles Lee Ray</td>
+                            <td>Chucky@nimblegold.com</td>
+                            <td>7</td>
+                            <td>$175,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="span-row">Total Years of Service:</th>
+                            <td>36</td>
+                            <td id="blackout"></td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="span-row">Total Salary:</th>
+                            <td>$1,690,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <figcaption>Employees who make the business what it is</figcaption>
+        </figure>
+        </main>
+            <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLinclude.min.js"></script>
+    </body>
+
+</html>
