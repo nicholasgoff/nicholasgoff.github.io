@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <title>BYO Intro Form</title>
+</head>
+<body>
+    <main>
+        <h2>BYO Intro</h2>
+
+        <form id="intro-form">
+            <label>Name: <input type="text" id="name" placeholder="Enter your name" value="Nicholas Goff" required></label><br>
+            <label>Mascot: <input type="text" id="mascot" placeholder="Enter your mascot" value="Nimble Goldfish" required></label><br>
+            <label><img id="output-image" src="images/IMG_0073.JPG" alt="Default Image" width="200">
+                <input type="file" id="image" accept="image/png, image/jpeg"></label><br>
+            
+            <label>Caption: <input type="text" id="caption" placeholder="Enter caption for image" value="Titanic Pose on a Cruise" required></label><br>
+            <label>Personal Background: <textarea id="personal" required>I was born in Florida but moved here to Mint Hill, NC when I was two.</textarea></label><br>
+            <label>Professional Background: <textarea id="professional" required>I have been working in retail for roughly 3 years. I’ve been at Publix for a little over a year and before that I was at CVS. Before CVS I briefly worked as an electrical apprentice.</textarea></label><br>
+            <label>Academic Background: <textarea id="academic" required>I started here at UNCC fall of 2022 but decided to switch and go to CPCC. I got my associates degree from CPCC in December and am pursuing my Bachelors degree here. I am expected to graduate in 2026.</textarea></label><br>
+            <label>Background in this Subject: <textarea id="subject" required>I have mostly been working with Java through courses at CPCC. Outside of that I have learned a few things with HTML and C++. I also took a cybersecurity course and covered many topics in that field.</textarea></label><br>
+            <label>Primary Computer Platform: <input type="text" id="platform" value="Windows Desktop/Laptop" required></label><br>
+
+            <div id="courses">
+                <label>Courses I'm taking &amp; why:</label><br>
+                <div class="course-wrapper">
+                    <input type="text" class="course" placeholder="Course and why you chose it" value="ITSC 2175 - Logic and Algorithms - Required and it seems interesting." required>
+                    <button type="button" class="remove-course">Remove</button><br>
+                </div>
+                <div class="course-wrapper">
+                    <input type="text" class="course" placeholder="Course and why you chose it" value="ITSC 2181 - Intro to Computer Systems - Required and this knowledge will help me pursue a different job opportunity at my current job." required>
+                    <button type="button" class="remove-course">Remove</button><br>
+                </div>
+                <div class="course-wrapper">
+                    <input type="text" class="course" placeholder="Course and why you chose it" value="ITSC 2600 - Program, Identity, Career - Required but will hopefully help me find internship opportunities." required>
+                    <button type="button" class="remove-course">Remove</button><br>
+                </div>
+                <div class="course-wrapper">
+                    <input type="text" class="course" placeholder="Course and why you chose it" value="ITIS 3135 - Web Based Application Design and Development - Not required but I thought it would be interesting to learn more about. I also can use the knowledge from this course and apply it to careers." required>
+                    <button type="button" class="remove-course">Remove</button><br>
+                </div>
+                <button type="button" onclick="addCourse()">Add Course</button><br>
+            </div>
+
+            <label>Interesting Item to Remember me by: <textarea id="interesting" required>I am trying to collect more of the limited time crocs to wear but I only have Tow Mater and Shrek.</textarea></label><br>
+            <label>I'd also like to share: <textarea id="share" required>Outside of work and school I enjoy playing soccer, going to the gym, or playing video games.</textarea></label><br>
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I understand that what is on this page is not password protected and
+                I will not put anything here that I don't want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="output" style="display:none;"></div>
+        <button id="reset-form" style="display:none;" onclick="resetForm()">Reset Form</button>
+    </main>   
+
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
+
