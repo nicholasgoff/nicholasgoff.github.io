@@ -1,0 +1,333 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(38, 38, 38); /* Dark background for the header */
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+    text-align: center;
+}
+
+nav {
+    color: rgb(255, 255, 255); 
+    padding: 5px;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+nav a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+nav a:hover {
+    color: rgb(255, 105, 180); 
+}
+
+
+#royal-caribbean nav a:hover {
+    color: rgb(0, 115, 187); 
+}
+
+#carnival nav a:hover {
+    color: rgb(255, 69, 58); 
+}
+
+#msc nav a:hover {
+    color: rgb(255, 182, 193); 
+}
+
+#virgin nav a:hover {
+    color: rgb(255, 105, 180); 
+}
+
+
+nav a.active {
+    border-bottom: 3px solid rgb(255, 105, 180); 
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: grid;
+}
+
+
+#home-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(0, 128, 128);
+}
+
+
+.about-me {
+    background-color: rgb(255, 255, 153);
+    padding: 20px;
+    grid-row: 1 / 3;
+}
+.about-me h2 {
+    color: rgb(0, 128, 0); 
+}
+.about-me p {
+    color: rgb(51, 51, 51); 
+}
+
+
+.why-book-with-me {
+    padding: 20px;
+    background-color: rgb(255, 182, 193);
+}
+.why-book-with-me h2 {
+    color: rgb(255, 69, 0); 
+}
+.why-book-with-me p {
+    color: rgb(40, 40, 40); 
+}
+.bold {
+    font-weight: bold;
+}
+
+.external-links {
+    padding: 20px;
+    background-color: rgb(135, 206, 250);
+}
+.external-links h2 {
+    color: rgb(0, 102, 204); 
+}
+.external-links p {
+    color: rgb(20, 20, 20); 
+}
+.external-links a {
+    color: rgb(15, 107, 89); 
+    text-decoration: none;
+    font-weight: bold;
+}
+.external-links a:hover {
+    color: rgb(255, 69, 58); 
+}
+
+#home-page, .about-me, .why-book-with-me, .external-links {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+#about-me-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+
+#royal-caribbean,
+#carnival,
+#msc {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    align-items: stretch;
+    height: 500px;
+}
+
+#virgin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    align-items: stretch;
+    height: 500px;
+}
+
+
+.exclusives,
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #f0f8ff; 
+    width: fit-content;
+}
+
+#royal-caribbean {
+    min-height: 100vh;
+    background-color: rgb(6, 21, 86);
+    color: white; 
+}
+
+#royal-caribbean .exclusives,
+#royal-caribbean .information {
+    background-color: #005daa1a; 
+
+    background-color: rgb(0, 115, 187);
+    border: 1px solid rgba(0, 93, 170, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 93, 170, 0.2);
+    padding: 20px;
+    color: white;
+}
+
+#royal-caribbean h2,
+#royal-caribbean .highlight,
+#royal-caribbean .exclusives h3,
+#royal-caribbean .information h3 {
+    color: rgb(254, 189, 17);
+}
+
+#carnival {
+    min-height: 100vh;
+    background-color: rgb(182, 27, 56);
+    color: white; 
+}
+
+#carnival .exclusives,
+#carnival .information {
+    background-color: rgb(1, 78, 143); 
+    border: 1px solid rgba(255, 245, 230, 0.5); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 245, 230, 0.2);
+    padding: 20px;
+    color: white;
+}
+
+#carnival h2,
+#carnival .highlight,
+#carnival .exclusives h3,
+#carnival .information h3 {
+    color: rgb(255, 223, 128);
+}
+
+#msc {
+    min-height: 100vh;
+    background-color: rgb(0, 31, 63);
+    color: white; 
+}
+
+#msc .exclusives,
+#msc .information {
+    background-color: rgb(245, 238, 214);
+    border: 1px solid rgba(255, 204, 0, 0.5); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.2);
+    padding: 20px;
+    color: rgb(0, 31, 63);
+}
+
+#msc h2,
+#msc .highlight,
+#msc .exclusives h3,
+#msc .information h3 {
+    color: rgb(255, 204, 0);
+}
+
+#virgin {
+    min-height: 100vh;
+    background-color: rgb(198, 12, 48);
+    color: white; 
+}
+
+#virgin .exclusives,
+#virgin .information {
+    background-color: rgb(220, 220, 220); 
+    border: 1px solid rgba(198, 12, 48, 0.5); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(198, 12, 48, 0.2);
+    padding: 20px;
+    color: rgb(198, 12, 48); 
+}
+
+#virgin h2,
+#virgin .highlight,
+#virgin .exclusives h3,
+#virgin .information h3 {
+    color: rgb(255, 105, 180); 
+}
+
+
+.photo-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

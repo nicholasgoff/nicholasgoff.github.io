@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="travelStyles.css" rel="stylesheet">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <title>Plan Your Perfect Cruise | Expert Travel Advice from Dawn Goff</title>
+
+    </head>
+    <body>
+        <header>
+            <h1>Your Cruise Travel Expert – Personalized Planning with Dawn Goff</h1>
+        
+            <nav>
+                    <a href="#" onclick="showPage('home-page')">Home</a>
+                    <span>🛳️</span>
+                    <a href="#" onclick="showPage('royal-caribbean')">Royal Caribbean</a>
+                    <span>🛳️</span>
+                    <a href="#" onclick="showPage('carnival')">Carnival</a>
+                    <span>🛳️</span>
+                    <a href="#" onclick="showPage('msc')">MSC</a>
+                    <span>🛳️</span>
+                    <a href="#" onclick="showPage('virgin')">Virgin Voyages</a>
+                    
+                
+            </nav>
+            
+        </header>
+        <main>
+
+
+    <section id="home-page" class="page active">
+            <div class="about-me">
+                <div id="about-me-text">
+                    <h2>About Me</h2>
+                    <p>My name is Dawn Goff. I am a proud mom to five wonderful children.  </p>
+                        <p>My goal is to make your travel experience as smooth and enjoyable as possible. 
+                            I have a passion for travel and love to share my knowledge with others.</p>
+                </div>
+                <figure id="about-me-image">
+                    <img src="images/aboutMePhoto.JPG" alt="About Me Image">
+                    <figcaption>Fancy Night on one of our Cruises</figcaption>
+                </figure>
+            </div>
+           
+
+           
+            <div class="why-book-with-me">
+                <div id="why-book-with-me-text">
+                    <h2>Why Book With Me?</h2>
+                    <p>Booking with me means you will receive personalized service, expert advice, and access to exclusive deals. 
+                        I will work closely with you to understand your travel preferences and create a 
+                        customized itinerary that meets your needs.</p>
+                        <p> Feel free to contact me at <span class="bold">dawn.goff@fora.travel</span> </p>
+                </div>
+
+                <button id="contact-me-button">Contact Me</button>
+
+               
+                <div id="form-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeForm()">&times;</span>
+                        <h2>Contact Me</h2>
+                        <h3>*This form is for practice purposes, 
+                            please use email to contact me until form is fixed*</h3>
+                        <form id="contact-me-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            
+            <div class="external-links">
+                <div id="external-links-text">
+                    <h2>External Links</h2>
+                    <p>Check out these resources for more information on cruises:</p>
+                    <ul>
+                        <li><a href="https://www.royalcaribbean.com/" target="_blank">Royal Caribbean</a></li>
+                        <li><a href="https://www.carnival.com/" target="_blank">Carnival</a></li>
+                        <li><a href="https://www.msccruises.com/" target="_blank">MSC Cruises</a></li>
+                        <li><a href="https://www.virginvoyages.com/book/voyage-planner/find-a-voyage?cabins=1&currencyCode=USD&agentId=227418&agencyId=15975&bookingChannel=FMLINK" target="_blank">Virgin Voyages</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+    </section>
+
+
+            
+    <section id="royal-caribbean" class="page">
+       
+
+        <div class="exclusives">
+            <h2>Royal Caribbean Exclusives</h2>
+            <ul>
+                <li>Current Holder for worlds largest cruise ship</li>
+                <li>Kids Sail Free *select cruise, 12 and Under*</li>
+                <li>Aqua Theater ~ deepest and largest fresh water pool at sea</li>
+                
+            </ul>
+        </div>
+
+         
+         <div class="photo-slide">
+            <img src="images/cocoCay.jpg" alt="Coco Cay" class="slide active">
+            <img src="images/iconShip.jpg" alt="Icon of the Seas" class="slide">
+            <img src="images/odysseyShip.webp" alt="Odyssey Ship" class="slide">
+            <img src="images/cocoCayMap.png" alt="Coco Cay Map" class="slide">    
+        </div>
+
+        <div class="information">
+            <h2>Information</h2>
+           
+                <p>One of the few cruise lines that offers full length broadway productions including:</p>
+                  <ol>
+                    <li>CATS</li>
+                    <li>Grease</li>
+                    <li>Hairspray</li>
+                    <li>Mama Mia!</li>
+                    <li>Saturday Night Fever</li>
+                  </ol>
+                  
+                <p>Are known for their innovative ships and unique onboard experiences. 
+                    They offer a wide range of activities, including rock climbing, ice skating, and surf simulators.</p>
+
+        </div>
+    </section>
+            
+
+            
+    <section id="carnival" class="page">
+        
+
+        <div class="exclusives">
+            <h2>Carnival Exclusives</h2>
+            <ul>
+                <li>Discounted 3rd and 4th guest in stateroom</li>
+                <li>Guy's Burgers</li>
+                <li>Select Ships Have:</li>
+            </ul>
+                    <ol>
+                        
+                        <li>Shaqs Chicken</li>
+                        <li>Guys pig and anchor smokehouse</li>
+                    </ol>
+                
+            
+        </div>
+
+        
+        <div class="photo-slide">
+            <img src="images/carnivalShip1.jpg" alt="Carnival Ship 1" class="slide active">
+            <img src="images/carnivalDining1.jpg" alt="Carnival Dining 1" class="slide">
+            <img src="images/carnivalShip2.jpg" alt="Carnival Ship 2" class="slide">
+        </div>
+
+        <div class="information">
+            <h2>Information</h2>
+            <p>Operates 29 ships</p>
+            <p>Offers 2-22 day voyages</p>
+            <p>Departing from every coast in the US</p>
+        </div>
+    </section>
+            
+
+            
+    <section id="msc" class="page">
+
+        <div class="exclusives">
+            <h2>MSC Exclusives</h2>
+            <p>Kids sail free *select sailings*</p>
+            <p>Known for their swarovski crystal staircases</p>
+            <p>Offer 4D cinema and Formula 1 simulator *select ships*</p>
+            <p>Offers broadway style shows</p>
+        </div>
+
+        
+        <div class="photo-slide">
+            <img src="images/mscShip1.webp" alt="MSC Ship 1" class="slide active">
+            <img src="images/mscDining1.jpg" alt="MSC Dining 1" class="slide">
+            <img src="images/mscWaterPark1.jpg" alt="Water Park 1" class="slide">
+        </div>
+
+        <div class="information">
+            <h2>Information</h2>
+            <p>Has 24 ships</p>
+            <p>Have sailings in 5 different continents</p>
+            <p>Visits over 100 countries</p>
+        </div>
+    </section>
+            
+
+            
+            <section id="virgin" class="page">
+
+                
+                <div class="photo-slide">
+                    <img src="images/virginShip1.jpg" alt="Virgin Ship 1" class="slide active">
+                    <img src="images/virginShip2.jpg" alt="Virgin Ship 2" class="slide">
+                    <img src="images/virginShip3.png" alt="Virgin Ship 3" class="slide">
+                </div>
+        
+                <div class="exclusives">
+                    <h2>Virgin Voyages Exclusives</h2>
+                    <p>Adults Only</p>
+                    <p>Included in Cruise Fare:</p>
+                    <ol>
+                        <li>All Dinning</li>
+                        <li>Drinks such as soda, juices, teas, and coffee</li>
+                        <li>Wifi</li>
+                        <li>Tips and Gratuities</li>
+                        <li>Group Fitness Classes</li>
+                        <li>Entertainment</li>
+                    </ol>
+                    <p>150+ destinations on 4-16 night voyages</p>
+                </div>
+
+            </section>
+                
+            
+            
+
+
+            
+        </main>
+        <script src="travelScript.js"></script>
+    </body>
+</html>
