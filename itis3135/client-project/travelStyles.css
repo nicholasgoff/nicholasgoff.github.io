@@ -82,6 +82,7 @@ nav a.active {
     gap: 20px;
     padding: 20px;
     background-color: rgb(0, 128, 128);
+    min-height: 100vh;
 }
 
 
