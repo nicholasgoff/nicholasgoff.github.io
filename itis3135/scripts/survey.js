@@ -4,6 +4,10 @@ function handleSubmit(event) {
 
     const name = document.getElementById("name").value.trim();
     const mascot = document.getElementById("mascot").value.trim();
+    // Set the name and mascot above the header
+    const nameMascotDisplay = document.getElementById("name-mascot-display");
+    nameMascotDisplay.innerHTML = `<h1>${name || 'Nicholas Goff'} ~ ${mascot || 'Nimble Goldfish'}</h1>`;
+
     const image = document.getElementById("image").files[0];
     const caption = document.getElementById("caption").value.trim();
     const personal = document.getElementById("personal").value.trim();
@@ -32,11 +36,12 @@ function handleSubmit(event) {
     let outputHTML = "";
 
     
-    if (!name && !mascot) {
+    /*if (!name && !mascot) {
         outputHTML += `<h2>${"Nicholas Goff ~ Nimble Goldfish"}</h2>`;
     } else {
         outputHTML += `<h2>${name || 'Nicholas Goff'} ~ ${mascot || 'Nimble Goldfish'}</h2>`;
-    }
+    }*/
+        
 
     
     outputHTML += `
@@ -80,6 +85,8 @@ function resetForm() {
     document.getElementById("intro-form").style.display = "block";
     document.getElementById("output").style.display = "none";
     document.getElementById("reset-form").style.display = "none";
+    document.getElementById("name-mascot-display").innerHTML = '';
+
 }
 
 
