@@ -3,7 +3,7 @@ let slideIntervals = {};
 function startSlideshowForSection(sectionId) {
     const section = document.getElementById(sectionId);
     const slides = section.querySelectorAll('.slide');
-    const container = section.querySelector('.photo-slide');
+    const container = section.querySelector('.photo-slide');   
 
     if (!slides.length || !container) return;
 
