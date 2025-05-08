@@ -76,10 +76,12 @@ figure {
     height: 500px; 
     object-fit: cover;
   }
-
-  .slide.active {
+  .active {
     display: block;
   }
+  /* .slide.active {
+    display: block;
+  } */
 
   .caption {
     font-size: 1rem;
@@ -120,13 +122,17 @@ figure {
     height: auto;
     cursor: pointer;
     opacity: 0.6;
-    border: 2px solid transparent;
+    /*border: 2px solid transparent;*/
   }
-
-  .thumbnail.active {
+  .active{
     opacity: 1;
     border-color: #333;
   }
+
+  /* .thumbnail.active {
+    opacity: 1;
+    border-color: #333;
+  } */
     </style>
 </head>
 <body>
@@ -142,6 +148,10 @@ figure {
       <img src="images/IMG_6445.JPG" alt="Ice maker" class="slide" data-caption="An Ice maker with 3 little cubes.">
       <img src="images/IMG_6253.JPG" alt="Cruise" class="slide" data-caption="A newer cruise ship docked with an older one.">
       <img src="images/IMG_6442.JPG" alt="Keyboard" class="slide" data-caption="My personal keyboard.">
+      <img src="images/github.png" alt="Github" class="slide" data-caption="My Github profile.">
+      <img src="images/objects.jpeg" alt="Objects" class="slide" data-caption="A collection of objects.">
+      <img src="images/funkoPop1.jpeg" alt="Funko Pop" class="slide" data-caption="One of my Funko Pop figure.">
+      <img src="images/funkoPop2.jpeg" alt="Funko Pop" class="slide" data-caption="Another one of my Funko Pop figure.">
 
       <!-- Navigation Buttons -->
       <button class="nav-button prev" onclick="changeSlide(-1)">❮</button>
@@ -153,6 +163,8 @@ figure {
       <!-- Thumbnails -->
       <div class="thumbnail-container" id="thumbnailContainer"></div>
     </div>
+
+  
     
   </main>
   <footer>
